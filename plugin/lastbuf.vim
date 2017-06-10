@@ -27,7 +27,7 @@ function! s:setLastBuf() "{{{
     if tabpagenr() > 1 && len(tabpagebuflist()) == 1
         let s:w = 'tab'
     else
-        let s:w = ''
+        let s:w = 'vert'
     endif
 endfunction "}}}
 function! s:addLastBuf() "{{{
